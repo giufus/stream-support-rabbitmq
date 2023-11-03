@@ -2,7 +2,7 @@
 
 ### Build locally
 ```
-docker build . -t giufus/stream-support-rabbitmq:3.12.8-management -t giufus/stream-support-rabbitmq
+export TAG="3.12.8-management"; docker build --build-arg "TAG=${TAG}" . -t giufus/stream-support-rabbitmq:${TAG} -t giufus/stream-support-rabbitmq
 ```
 
 ### Build and push to Docker Hub (using version 3.12.8-management)  
